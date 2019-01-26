@@ -14,7 +14,8 @@ import java.util.concurrent.atomic.AtomicLong;
 @AllArgsConstructor
 class PokeController {
 
-    private static final String message = "This service has been poked %d time%s since it's wake up on %s";
+    private static final String message =
+            "This service has been poked %d time%s since it's wake up on %s. Refresh page to poke again.";
     private static final AtomicLong counter = new AtomicLong(0);
 
     private StartupTimeService startupTimeService;
